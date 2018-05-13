@@ -1,4 +1,7 @@
 <app-server></app-server>
 <app-server></app-server>
 
-<button class="btn btn-success" [disabled]="!allowNewServer">Click Me </button>
+<button class="btn btn-success" [disabled]="!allowNewServer" 
+        (click)="onCreateServer()">Click Me </button>
+
+<p>{{serverCreationStatus}}</p>
