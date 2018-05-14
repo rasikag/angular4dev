@@ -12,6 +12,7 @@ export class ServersComponent implements OnInit {
   allowNewServer: boolean = false;
   serverCreationStatus: string = 'No server was created';
   serverName: string = 'NodeJS Server in port 4200';
+  checkServerStatus: boolean = false;
 
   constructor() { 
     // after 2s this will 
@@ -24,6 +25,7 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer() {
+    this.checkServerStatus = true;
     this.serverCreationStatus = 'Server was created!';
   }
 
