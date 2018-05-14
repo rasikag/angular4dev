@@ -11,7 +11,7 @@ export class ServersComponent implements OnInit {
 
   allowNewServer: boolean = false;
   serverCreationStatus: string = 'No server was created';
-  serverName: string = '';
+  serverName: string = 'NodeJS Server in port 4200';
 
   constructor() { 
     // after 2s this will 
@@ -28,9 +28,9 @@ export class ServersComponent implements OnInit {
   }
 
   //event: any
-  onUpdateServerName(event: any) {
+  //onUpdateServerName(event: any) {
     // explicit casting
-    this.serverName = (<HTMLInputElement>event.target).value;
-  }
+  //  this.serverName = (<HTMLInputElement>event.target).value;
+  //}
 
 }
